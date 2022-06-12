@@ -3,8 +3,8 @@
 */
 function getRandomNumber (min, max) {
   if (max <= min) {
-    return false;
     console.log('Функция не может быть выполнена, введите max больше min');
+    return false;
   }
   min = Math.ceil(min);
   max = Math.floor(max);
@@ -26,8 +26,8 @@ function lengthString(inputText, maxlength)
   }
   else
   {
-    return false;
     console.log('Пожалуйста введите до ' + maxlength + ' символов');
+    return false;
   }
 }
 lengthString (document.querySelector('.text__hashtags'), 10);

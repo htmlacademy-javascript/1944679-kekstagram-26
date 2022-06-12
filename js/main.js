@@ -3,7 +3,7 @@
 */
 function getRandomNumber (min, max) {
   if (max <= min) {
-    console.log('Функция не может быть выполнена, введите max больше min');
+    alert('Функция не может быть выполнена, введите max больше min');
     return false;
   }
   min = Math.ceil(min);
@@ -26,7 +26,7 @@ function lengthString(inputText, maxlength)
   }
   else
   {
-    console.log('Пожалуйста введите до ' + maxlength + ' символов');
+    alert('Пожалуйста введите до ' +maxlength+ ' символов');
     return false;
   }
 }

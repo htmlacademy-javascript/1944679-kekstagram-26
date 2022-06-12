@@ -3,8 +3,8 @@
 */
 function getRandomNumber (min, max) {
   if (max <= min) {
-    console.log('Функция не может быть выполнена, введите max больше min')
     return false;
+    console.log('Функция не может быть выполнена, введите max больше min');
   }
   min = Math.ceil(min);
   max = Math.floor(max);
@@ -19,15 +19,15 @@ getRandomNumber (4, 13);
 
 function lengthString(inputText, maxlength)
 {
-  let userInput = inputText.value;
+  const userInput = inputText.value;
   if (userInput.length <= maxlength)
   {
     return true;
   }
   else
   {
-    console.log("Пожалуйста введите " + " до " + maxlength + " символов");
     return false;
+    console.log('Пожалуйста введите до ' + maxlength + ' символов');
   }
 }
-console.log(lengthString (document.querySelector('.text__hashtags'), 10));
+lengthString (document.querySelector('.text__hashtags'), 10);

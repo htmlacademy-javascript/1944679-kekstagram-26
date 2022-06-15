@@ -10,7 +10,7 @@ function getRandomNumber (min, max) {
   }
   min = Math.ceil(minimum);
   max = Math.floor(maximum);
-  return Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 getRandomNumber (4, 13);
 getRandomNumber (10, 7));
@@ -22,9 +22,7 @@ getRandomNumber (13, 13);
 
 function lengthString(inputText, maxlength) {
   const userInput = inputText.value;
-  if (userInput.length <= maxlength)
-  {
-    return userInput.length <= maxlength;
+  return userInput.length <= maxlength;
   }
 }
 lengthString (document.querySelector('.text__hashtags'), 10);

@@ -13,7 +13,7 @@ function getRandomNumber (min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 getRandomNumber (4, 13);
-getRandomNumber (10, 7));
+getRandomNumber (10, 7);
 getRandomNumber (13, 13);
 
 /*

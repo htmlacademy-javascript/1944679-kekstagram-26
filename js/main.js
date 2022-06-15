@@ -5,7 +5,7 @@
 function getRandomNumber (min, max) {
   const minimum = Math.min(min, max);
   const maximum = Math.max(min, max);
-  if (minimum == maximum) {
+  if (minimum === maximum) {
     return maximum;
   }
   min = Math.ceil(minimum);
@@ -23,5 +23,5 @@ getRandomNumber (13, 13);
 function lengthString(inputText, maxlength) {
   const userInput = inputText.value;
   return userInput.length <= maxlength;
-  }
-lengthString (document.querySelector('.text__hashtags'), 11)
+}
+lengthString (document.querySelector('.text__hashtags'), 11);

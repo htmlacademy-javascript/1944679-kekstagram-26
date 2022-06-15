@@ -24,4 +24,4 @@ function lengthString(inputText, maxlength) {
   const userInput = inputText.value;
   return userInput.length <= maxlength;
   }
-lengthString (document.querySelector('.text__hashtags', 11)
+lengthString (document.querySelector('.text__hashtags'), 11)
